@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Code de l’Escale</title>
+  <style>
+    .background { fill: #faf8f2; }
+    @media (prefers-color-scheme: dark) {
+      .background { fill: #111719; }
+    }
+  </style>
+  <rect class="background" width="64" height="64" rx="13"/>
+  <path fill="#080d0e" d="M12 9 54 21 20 61Z"/>
+  <path fill="#fc68a3" d="M12 6 54 18 21 58Z"/>
+  <path fill="none" stroke="#101416" stroke-linecap="round" stroke-width="2"
+    d="m17 13 2 2m7-2 1 2m-8 5 2 1m14-4 2 2M20 48l2 2m1-9 2 1"/>
+  <ellipse cx="32" cy="33" rx="29" ry="14" transform="rotate(-23 32 33)"
+    fill="none" stroke="#ffe132" stroke-width="3"/>
+  <path fill="#080d0e" transform="translate(1 2.5)"
+    d="m56 15-5 11-20 2q-4 0-6 5l-4 10q-2 4 3 3l22-3-5 11-20 3Q6 59 11 45l7-17q4-9 16-10Z"/>
+  <path fill="#00b9bc"
+    d="m56 15-5 11-20 2q-4 0-6 5l-4 10q-2 4 3 3l22-3-5 11-20 3Q6 59 11 45l7-17q4-9 16-10Z"/>
+  <path fill="none" stroke="#ffe132" stroke-linecap="round" stroke-width="3"
+    d="M5 41C1 54 24 58 45 48"/>
+</svg>
