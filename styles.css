@@ -5,13 +5,28 @@
   font-style: normal;
   font-display: swap;
 }
+:root {
+  color-scheme: light dark;
+  --page-background: #faf8f2;
+  --page-highlight: #fcfaf5;
+  --tagline-color: #050909;
+  --cursor-outline: #080d0e;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background: #111719;
+    --page-highlight: #202c2f;
+    --tagline-color: #000000;
+    --cursor-outline: #faf8f2;
+  }
+}
 * { box-sizing: border-box; }
 html, body { margin: 0; min-height: 100%; }
-body { background: #faf8f2; }
+body { background: var(--page-background); }
 .canvas {
   width: 100%; min-height: 100svh; display: grid; place-items: center;
   overflow: hidden;
-  background: radial-gradient(ellipse at center, #fcfaf5 0%, #faf8f2 100%);
+  background: radial-gradient(ellipse at center, var(--page-highlight) 0%, var(--page-background) 100%);
 }
 .art { position: relative; width: min(100vw, 150vh); aspect-ratio: 3 / 2; container-type: inline-size; }
 .triangle, .triangle-shadow { position: absolute; clip-path: polygon(0 0, 100% 19.2%, 20% 100%); }
@@ -22,11 +37,11 @@ body { background: #faf8f2; }
 .orbit { position: absolute; left: 8%; top: 30%; width: 79%; height: 38%; border: 2.1cqw solid #ffe132; border-top-width: 1.4cqw; border-bottom-width: 1.1cqw; border-radius: 50%; transform: rotate(-16deg); box-shadow: -.2cqw .75cqw 0 #080d0c; }
 .orbit-back { clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 55%, 0 55%); }
 .wordmark { position: absolute; left: 24%; top: 27.8%; color: #00b9bc; font-family: Racing, sans-serif; font-size: 23.5cqw; line-height: 1; letter-spacing: -1.1cqw; transform: rotate(-6deg) skewX(-8deg) scaleX(1.12); transform-origin: left center; text-shadow: .12cqw .12cqw #00b1b5, .24cqw .24cqw #00a8ac, .4cqw .5cqw #061011, .6cqw .8cqw #061011, .8cqw 1.1cqw #061011, 1cqw 1.4cqw #061011; }
-.tagline { position: absolute; left: 33%; top: 54.7%; font: 11.6cqw/.95 Racing, sans-serif; color: #050909; white-space: nowrap; letter-spacing: -.48cqw; transform: rotate(-6deg) skewX(-8deg); transform-origin: left center; }
+.tagline { position: absolute; left: 33%; top: 54.7%; font: 11.6cqw/.95 Racing, sans-serif; color: var(--tagline-color); white-space: nowrap; letter-spacing: -.48cqw; transform: rotate(-6deg) skewX(-8deg); transform-origin: left center; }
 .tagline span { font-size: 7.5cqw; letter-spacing: -.3cqw; margin-right: .2cqw; }
 .orbit-front { clip-path: polygon(0 33%, 8% 33%, 8% 67%, 35% 100%, 59% 100%, 59% 120%, -10% 120%, -10% 33%); }
-.cursor { position: absolute; left: 84.1%; top: 31.7%; width: 8.5%; height: 21%; background: #080d0e; transform: rotate(-2deg); clip-path: polygon(0 0, 9% 0, 9% 6%, 19% 6%, 19% 12%, 29% 12%, 29% 18%, 39% 18%, 39% 24%, 49% 24%, 49% 30%, 59% 30%, 59% 36%, 69% 36%, 69% 42%, 79% 42%, 79% 48%, 89% 48%, 89% 54%, 99% 54%, 99% 63%, 71% 63%, 71% 71%, 79% 71%, 79% 83%, 88% 83%, 88% 95%, 78% 95%, 78% 100%, 61% 100%, 61% 94%, 52% 94%, 52% 82%, 44% 82%, 44% 72%, 35% 72%, 35% 78%, 26% 78%, 26% 83%, 9% 83%, 0 83%); }
-.cursor-fill { position: absolute; inset: 1.55cqw .8cqw 1cqw .8cqw; background: #faf8f2; clip-path: polygon(0 0, 12% 0, 12% 8%, 24% 8%, 24% 16%, 36% 16%, 36% 24%, 48% 24%, 48% 32%, 60% 32%, 60% 40%, 72% 40%, 72% 48%, 84% 48%, 84% 56%, 100% 56%, 100% 61%, 60% 61%, 60% 74%, 69% 74%, 69% 86%, 79% 86%, 79% 100%, 62% 100%, 62% 88%, 52% 88%, 52% 76%, 43% 76%, 43% 66%, 30% 66%, 30% 73%, 18% 73%, 18% 80%, 0 80%); }
+.cursor { position: absolute; left: 84.1%; top: 31.7%; width: 8.5%; height: 21%; background: var(--cursor-outline); transform: rotate(-2deg); clip-path: polygon(0 0, 9% 0, 9% 6%, 19% 6%, 19% 12%, 29% 12%, 29% 18%, 39% 18%, 39% 24%, 49% 24%, 49% 30%, 59% 30%, 59% 36%, 69% 36%, 69% 42%, 79% 42%, 79% 48%, 89% 48%, 89% 54%, 99% 54%, 99% 63%, 71% 63%, 71% 71%, 79% 71%, 79% 83%, 88% 83%, 88% 95%, 78% 95%, 78% 100%, 61% 100%, 61% 94%, 52% 94%, 52% 82%, 44% 82%, 44% 72%, 35% 72%, 35% 78%, 26% 78%, 26% 83%, 9% 83%, 0 83%); }
+.cursor-fill { position: absolute; inset: 1.55cqw .8cqw 1cqw .8cqw; background: var(--page-background); clip-path: polygon(0 0, 12% 0, 12% 8%, 24% 8%, 24% 16%, 36% 16%, 36% 24%, 48% 24%, 48% 32%, 60% 32%, 60% 40%, 72% 40%, 72% 48%, 84% 48%, 84% 56%, 100% 56%, 100% 61%, 60% 61%, 60% 74%, 69% 74%, 69% 86%, 79% 86%, 79% 100%, 62% 100%, 62% 88%, 52% 88%, 52% 76%, 43% 76%, 43% 66%, 30% 66%, 30% 73%, 18% 73%, 18% 80%, 0 80%); }
 .rays { position: absolute; left: 86.5%; top: 25%; width: 8%; height: 12%; }
 .rays i { position: absolute; display: block; width: .95cqw; height: 4.4cqw; background: #00b9b9; border-radius: .2cqw; }
 .rays i:nth-child(1) { left: 0; top: 0; transform: rotate(3deg); }
