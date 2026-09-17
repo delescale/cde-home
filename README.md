@@ -16,6 +16,7 @@ Visit [localhost:8000](http://localhost:8000). No dependencies or build step are
 
 - Responsive logo with a pink patterned triangle, yellow orbit, and pixel cursor.
 - Parallax layers that follow the mouse and reset when it leaves.
+- The logo's pixel cursor replaces the mouse pointer over the artwork and glides back into place on exit.
 - Light and dark themes that follow the device preference.
 - Reduced-motion support; touch input does not trigger parallax.
 

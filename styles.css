@@ -77,7 +77,18 @@ body { background: var(--page-background); }
 .art > .wordmark { --depth: 1; }
 .art > .tagline { --depth: 1.5; }
 .art > .orbit-front { --depth: 1.9; }
-.art > .cursor, .art > .rays { --depth: 2.5; }
+.art > .rays { --depth: 2.5; }
+
+/* This layer moves independently of parallax; the shape keeps its original
+   dimensions and rotation. The zero-size marker locates its rotated tip. */
+.art > .cursor-layer {
+  position: absolute;
+  inset: 0;
+  translate: var(--cursor-x, 0px) var(--cursor-y, 0px);
+}
+.cursor-tip { position: absolute; left: 0; top: 0; width: 0; height: 0; }
+.art.is-cursor-active { cursor: none; }
+.art.is-cursor-active > .cursor-layer { transition: none; z-index: 1; }
 
 @media (prefers-reduced-motion: reduce) {
   .art > * { translate: none; transition: none; }
