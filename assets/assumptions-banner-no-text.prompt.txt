@@ -1,0 +1,7 @@
+Generated using the built-in image_gen tool.
+
+Use case: ads-marketing.
+Create a finished wide 3:1 banner for an Assumptions canvas, entirely visual, NO WORDS OR LETTERING.
+Input image is a brand style reference: Code de l’Escale logo. Retain its playful retro 1990s Memphis graphic identity, turquoise #00b9bc, pink #fc68a3 with black speckles, yellow #ffe132, crisp black offset shadows, warm ivory #faf8f2 background.
+Represent assumptions visually as unverified ideas: a small composition of three overlapping tilted idea cards with large graphic question-mark symbols, connected with dashed paths to simple outlined geometric possibilities. A central turquoise question mark is the focal symbol, flanked by pink and yellow cards suggesting alternative hypotheses. Use the reference's pink speckled triangle behind the composition and a sweeping yellow elliptical orbit to unify it. Include its black-and-ivory pixel cursor with turquoise click rays as a small supporting element pointing toward a question card.
+Polished restrained flat graphic illustration, bold clean shapes and hard offset shadows matching reference, strong horizontal composition, balanced negative space, generous safe margins, designed to work as a shallow canvas cover banner. All meaningful imagery within central vertical 65 percent. No typography, no words, no letters, no numbers, no logo wordmark, no captions, no watermark, no UI mockup. Question-mark symbols and simple dashed connectors are permitted. Do not write "Assumptions" or any other word.
