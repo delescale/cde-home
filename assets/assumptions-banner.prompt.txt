@@ -1,7 +1,0 @@
-Generated using the built-in image_gen tool.
-Reference: rendered Code de l’Escale logo from index.html and styles.css.
-
-Use case: ads-marketing.
-Create a finished wide 3:1 banner asset for an "Assumptions" canvas, ideally 2400x800.
-Input image: brand style reference, the Code de l’Escale logo rendered from the user's project. Use its distinctive retro 1990s graphic identity to create a companion banner.
-Composition: one large, highly legible title "Assumptions" across the central area, bold forward-slanted geometric typography inspired by the reference, turquoise fill and crisp black offset extrusion. Warm ivory background #faf8f2. A pink #fc68a3 triangle with sparse black Memphis speckles sits behind the title; a sweeping yellow #ffe132 elliptical orbit threads behind and below the title. Include a small black-and-ivory pixel cursor with turquoise click rays near the end of the title, in the same visual language as the reference. Balanced generous negative space and safe margins on all edges, all title letters fully visible. Precise flat graphic shapes with clean edges, limited palette, polished playful brand design. Main text exactly "Assumptions". No additional words, no watermark, no mockup, no canvas UI. Match the reference's visual style without reproducing the words in the original logo.
