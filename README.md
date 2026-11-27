@@ -15,8 +15,9 @@ Visit [localhost:8000](http://localhost:8000). No dependencies or build step are
 ## Features
 
 - Responsive logo with a pink patterned triangle, yellow orbit, and pixel cursor.
-- Parallax layers that follow the mouse and reset when it leaves.
-- The logo's pixel cursor replaces the mouse pointer over the artwork and glides back into place on exit.
+- Three CSS speckle shapes scattered programmatically with varied positions, rotations, and sizes; a fixed seed keeps the pattern consistent.
+- Parallax layers that follow the mouse across the viewport and reset when it leaves.
+- The logo's pixel cursor replaces the mouse pointer throughout the viewport and glides back into place on exit.
 - Light and dark themes that follow the device preference.
 - Reduced-motion support; touch input does not trigger parallax.
 
@@ -27,12 +28,13 @@ Visit [localhost:8000](http://localhost:8000). No dependencies or build step are
 | `index.html` | Logo markup and browser theme metadata |
 | `styles.css` | Logo shapes, typography, responsive layout, themes, and motion styles |
 | `parallax.js` | Pointer tracking and motion preference handling |
+| `speckles.js` | Generates the triangle's scattered three-shape speckle pattern |
 | `favicon.svg` | Simplified logo icon with light and dark backgrounds |
 | `assets/` | Bundled fonts and their licenses |
 
 ## Deployment
 
-The site can be hosted by any static web server. Publish `index.html`, `styles.css`, `parallax.js`, `favicon.svg`, and the `assets/` directory together.
+The site can be hosted by any static web server. Publish `index.html`, `styles.css`, `parallax.js`, `speckles.js`, `favicon.svg`, and the `assets/` directory together.
 
 For Cloudflare Pages, connect the GitHub repository and use:
 
